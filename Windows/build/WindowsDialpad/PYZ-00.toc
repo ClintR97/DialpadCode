@@ -336,25 +336,17 @@
    'C:\\Users\\Clint '
    'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py',
    'PYMODULE'),
-  ('tracemalloc',
+  ('stringprep',
    'C:\\Users\\Clint '
-   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
+   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
    'PYMODULE'),
   ('_py_abc',
    'C:\\Users\\Clint '
    'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
    'PYMODULE'),
-  ('stringprep',
+  ('tracemalloc',
    'C:\\Users\\Clint '
-   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('tkinter.messagebox',
-   'C:\\Users\\Clint '
-   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\messagebox.py',
-   'PYMODULE'),
-  ('tkinter.commondialog',
-   'C:\\Users\\Clint '
-   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\commondialog.py',
+   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('certifi',
    'C:\\Users\\Clint '
@@ -371,6 +363,14 @@
   ('ssl',
    'C:\\Users\\Clint '
    'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ssl.py',
+   'PYMODULE'),
+  ('tkinter.messagebox',
+   'C:\\Users\\Clint '
+   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\messagebox.py',
+   'PYMODULE'),
+  ('tkinter.commondialog',
+   'C:\\Users\\Clint '
+   'Richards\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\commondialog.py',
    'PYMODULE'),
   ('tkinter.ttk',
    'C:\\Users\\Clint '
