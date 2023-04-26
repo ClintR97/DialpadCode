@@ -1,0 +1,16 @@
+Script for Selecting CSV file and Download Directory for Call Log Files
+This script allows the user to select a CSV file containing call logs and a download directory for the call log files. The script creates a GUI window using tkinter to prompt the user to select the CSV file and download directory.
+
+The script uses the following Python modules:
+
+csv
+os
+urllib.request
+tkinter
+ssl
+certifi
+urllib.error
+
+The script first creates a tkinter GUI window with a button to select the CSV file and a button to select the download directory. The selected file and directory are stored in tkinter variables. After the user selects the CSV file and download directory, the script creates a new folder for each person in the CSV file in the selected download directory.
+
+To run the script, simply execute it using a Python interpreter. The script will display a GUI window prompting the user to select the CSV file and download directory. After selecting both, the script will create a new folder for each person in the CSV file in the selected download directory.
