@@ -5,7 +5,7 @@ from tkinter import Tk  # from tkinter import Tk for Python 3.x
 from tkinter.filedialog import askopenfilename
 from tkinter import ttk
 from tkinter import *
-from tkinter import filedialog as fd
+from tkinter import StringVar, messagebox as mbox, filedialog as fd
 from tkinter.filedialog import askdirectory
 import ssl
 import certifi
@@ -25,14 +25,14 @@ root.title("Select source call log csv")
 root.resizable(True, False)
 
 # set the size of the window
-root.geometry("300x150")
+root.geometry("450x175")
 
 # create a tkinter variable to store the name of the selected file
 select_filename_var = StringVar()
 
 # create a label to display the name of the selected file
 label = tk.Label(root, textvariable=select_filename_var, fg="red")
-label.grid(row=3, column=1)
+label.place(relx=0.50, rely=0.48, anchor=CENTER)
 
 # set the initial value of the label to an empty string
 select_filename_var.set("")
@@ -42,7 +42,7 @@ filepath_var = StringVar()
 
 # create a label to display the path of the selected directory
 label = tk.Label(root, textvariable=filepath_var, fg="red")
-label.grid(row=7, column=1)
+label.place(relx=0.50, rely=0.80, anchor=CENTER)
 
 # set the initial value of the label to an empty string
 filepath_var.set("")
@@ -76,11 +76,12 @@ def select_file():
 
 
 # create a tkinter button to select a csv file
-select_button = ttk.Button(root, text="Select csv File", command=select_file)
+select_button = ttk.Button(root, text="Select csv File", command=select_file, width=25, style='GreyButton.TButton')
 
 # place the button in the window using the grid layout manager
 select_button.place(relx=0.50, rely=0.33, anchor=CENTER)
-
+style = ttk.Style()
+style.configure('GreyButton.TButton', background='grey', foreground='black', borderwidth=4, relief='raised', font=('Arial', 10, 'bold'))
 
 # create a function to select a download directory using the tkinter file dialog
 # The function below is called when the user clicks the download button to select a directory.
@@ -94,14 +95,19 @@ def download_dir():
 
 
 # Create a "Select Download Location" button that calls the download_dir() function when clicked.
-download_button = ttk.Button(
-    root, text="Select Download Location", command=download_dir
-)
+download_button = ttk.Button(root, text="Select Download Location", command=download_dir, width=25, style='GreyButton.TButton')
 download_button.place(relx=0.50, rely=0.66, anchor=CENTER)
-
+style = ttk.Style()
+style.configure('GreyButton.TButton', background='grey', foreground='black', borderwidth=4, relief='raised', font=('Arial', 10, 'bold'))
 # Create a "Next" button that calls the "close" function when clicked.
 close_button = Button(root, text="Next", command=close)
-close_button.grid(row=10, column=1)
+# set the size of the button to be 25% larger than the default size
+close_button.config(height=int(close_button['height'] * 1.25), width=int(close_button['width'] * 1.25))
+
+# create a rounded border for the button
+close_button.config(background='white', foreground='black', borderwidth=4, relief='raised', font=('Arial', 10, 'bold'))
+
+close_button.place(relx=1.0, rely=1.0, anchor="se")
 
 # Run the tkinter application.
 root.mainloop()
