@@ -1,0 +1,3 @@
+([('M1Dialpad',
+   '/Users/admin/Documents/GitHub/DialpadCode/MacM1/dist/M1Dialpad',
+   'EXECUTABLE')],)
